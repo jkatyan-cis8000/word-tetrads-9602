@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Tetrads</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>Word Tetrads</h1>
+            <button class="btn-new-game" id="newGameBtn">New Game</button>
+        </header>
+
+        <div class="mistake-counter" id="mistakeCounter">
+            <span class="mistake-label">Mistakes:</span>
+            <span class="mistake-count">4</span>
+        </div>
+
+        <main class="game-content">
+            <div class="grid-container" id="gridContainer">
+                <!-- 16 word tiles will be generated here -->
+            </div>
+
+            <div class="message-area" id="messageArea">
+                <!-- Feedback messages will appear here -->
+            </div>
+
+            <div class="category-reveal" id="categoryReveal">
+                <!-- Solved categories will be revealed here -->
+            </div>
+        </main>
+
+        <footer class="game-footer">
+            <button class="btn-shuffle" id="shuffleBtn">Shuffle</button>
+        </footer>
+    </div>
+
+    <script src="src/index.ts"></script>
+</body>
+</html>
